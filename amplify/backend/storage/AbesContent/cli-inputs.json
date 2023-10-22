@@ -1,0 +1,14 @@
+{
+  "resourceName": "AbesContent",
+  "policyUUID": "ba5687b0",
+  "bucketName": "abes-bucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
