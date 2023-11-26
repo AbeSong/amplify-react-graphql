@@ -27,6 +27,7 @@ export default function NoteCreateForm(props) {
     extraField: "",
     image: "",
     extraField2: "",
+    extraField3: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [description, setDescription] = React.useState(
@@ -37,6 +38,9 @@ export default function NoteCreateForm(props) {
   const [extraField2, setExtraField2] = React.useState(
     initialValues.extraField2
   );
+  const [extraField3, setExtraField3] = React.useState(
+    initialValues.extraField3
+  );
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setName(initialValues.name);
@@ -44,6 +48,7 @@ export default function NoteCreateForm(props) {
     setExtraField(initialValues.extraField);
     setImage(initialValues.image);
     setExtraField2(initialValues.extraField2);
+    setExtraField3(initialValues.extraField3);
     setErrors({});
   };
   const validations = {
@@ -52,6 +57,7 @@ export default function NoteCreateForm(props) {
     extraField: [],
     image: [],
     extraField2: [],
+    extraField3: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -84,6 +90,7 @@ export default function NoteCreateForm(props) {
           extraField,
           image,
           extraField2,
+          extraField3,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -151,6 +158,7 @@ export default function NoteCreateForm(props) {
               extraField,
               image,
               extraField2,
+              extraField3,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -179,6 +187,7 @@ export default function NoteCreateForm(props) {
               extraField,
               image,
               extraField2,
+              extraField3,
             };
             const result = onChange(modelFields);
             value = result?.description ?? value;
@@ -207,6 +216,7 @@ export default function NoteCreateForm(props) {
               extraField: value,
               image,
               extraField2,
+              extraField3,
             };
             const result = onChange(modelFields);
             value = result?.extraField ?? value;
@@ -235,6 +245,7 @@ export default function NoteCreateForm(props) {
               extraField,
               image: value,
               extraField2,
+              extraField3,
             };
             const result = onChange(modelFields);
             value = result?.image ?? value;
@@ -263,6 +274,7 @@ export default function NoteCreateForm(props) {
               extraField,
               image,
               extraField2: value,
+              extraField3,
             };
             const result = onChange(modelFields);
             value = result?.extraField2 ?? value;
@@ -276,6 +288,35 @@ export default function NoteCreateForm(props) {
         errorMessage={errors.extraField2?.errorMessage}
         hasError={errors.extraField2?.hasError}
         {...getOverrideProps(overrides, "extraField2")}
+      ></TextField>
+      <TextField
+        label="Extra field3"
+        isRequired={false}
+        isReadOnly={false}
+        value={extraField3}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              description,
+              extraField,
+              image,
+              extraField2,
+              extraField3: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.extraField3 ?? value;
+          }
+          if (errors.extraField3?.hasError) {
+            runValidationTasks("extraField3", value);
+          }
+          setExtraField3(value);
+        }}
+        onBlur={() => runValidationTasks("extraField3", extraField3)}
+        errorMessage={errors.extraField3?.errorMessage}
+        hasError={errors.extraField3?.hasError}
+        {...getOverrideProps(overrides, "extraField3")}
       ></TextField>
       <Flex
         justifyContent="space-between"

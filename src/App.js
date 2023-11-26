@@ -48,7 +48,6 @@ const App = ({ signOut }) => {
       name: form.get("name"),
       description: form.get("description"),
       extraField: form.get("extraField"),
-      extraField2: form.get("extraField2"),
       image: image.name,
     };
     if (!!data.image) await Storage.put(data.name, image);
@@ -108,6 +107,14 @@ const App = ({ signOut }) => {
             variation="quiet"
             required
           />
+          <TextField
+            name="extraField3"
+            placeholder="Extra Field3"
+            label="An extra Field3"
+            labelHidden
+            variation="quiet"
+            required
+          />
           <View
             name="image"
             as="input"
@@ -136,6 +143,7 @@ const App = ({ signOut }) => {
             <Text as="span">{note.description}</Text>
             <Text as="span">{note.extraField}</Text>
             <Text as="span">{note.extraField2}</Text>
+            <Text as="span">{note.extraField3}</Text>
             {note.image && (
               <Image
                 src={note.image}
