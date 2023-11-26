@@ -6,5 +6,7 @@ type Note @model @auth(rules: [{allow: public}]) {
   image: String
   extraField2: String
   extraField3: String
+  extraField4: String
+  
 }
  

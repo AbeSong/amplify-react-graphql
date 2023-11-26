@@ -28,6 +28,7 @@ export default function NoteCreateForm(props) {
     image: "",
     extraField2: "",
     extraField3: "",
+    extraField4: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [description, setDescription] = React.useState(
@@ -41,6 +42,9 @@ export default function NoteCreateForm(props) {
   const [extraField3, setExtraField3] = React.useState(
     initialValues.extraField3
   );
+  const [extraField4, setExtraField4] = React.useState(
+    initialValues.extraField4
+  );
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setName(initialValues.name);
@@ -49,6 +53,7 @@ export default function NoteCreateForm(props) {
     setImage(initialValues.image);
     setExtraField2(initialValues.extraField2);
     setExtraField3(initialValues.extraField3);
+    setExtraField4(initialValues.extraField4);
     setErrors({});
   };
   const validations = {
@@ -58,6 +63,7 @@ export default function NoteCreateForm(props) {
     image: [],
     extraField2: [],
     extraField3: [],
+    extraField4: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -91,6 +97,7 @@ export default function NoteCreateForm(props) {
           image,
           extraField2,
           extraField3,
+          extraField4,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -159,6 +166,7 @@ export default function NoteCreateForm(props) {
               image,
               extraField2,
               extraField3,
+              extraField4,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -188,6 +196,7 @@ export default function NoteCreateForm(props) {
               image,
               extraField2,
               extraField3,
+              extraField4,
             };
             const result = onChange(modelFields);
             value = result?.description ?? value;
@@ -217,6 +226,7 @@ export default function NoteCreateForm(props) {
               image,
               extraField2,
               extraField3,
+              extraField4,
             };
             const result = onChange(modelFields);
             value = result?.extraField ?? value;
@@ -246,6 +256,7 @@ export default function NoteCreateForm(props) {
               image: value,
               extraField2,
               extraField3,
+              extraField4,
             };
             const result = onChange(modelFields);
             value = result?.image ?? value;
@@ -275,6 +286,7 @@ export default function NoteCreateForm(props) {
               image,
               extraField2: value,
               extraField3,
+              extraField4,
             };
             const result = onChange(modelFields);
             value = result?.extraField2 ?? value;
@@ -304,6 +316,7 @@ export default function NoteCreateForm(props) {
               image,
               extraField2,
               extraField3: value,
+              extraField4,
             };
             const result = onChange(modelFields);
             value = result?.extraField3 ?? value;
@@ -317,6 +330,36 @@ export default function NoteCreateForm(props) {
         errorMessage={errors.extraField3?.errorMessage}
         hasError={errors.extraField3?.hasError}
         {...getOverrideProps(overrides, "extraField3")}
+      ></TextField>
+      <TextField
+        label="Extra field4"
+        isRequired={false}
+        isReadOnly={false}
+        value={extraField4}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              description,
+              extraField,
+              image,
+              extraField2,
+              extraField3,
+              extraField4: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.extraField4 ?? value;
+          }
+          if (errors.extraField4?.hasError) {
+            runValidationTasks("extraField4", value);
+          }
+          setExtraField4(value);
+        }}
+        onBlur={() => runValidationTasks("extraField4", extraField4)}
+        errorMessage={errors.extraField4?.errorMessage}
+        hasError={errors.extraField4?.hasError}
+        {...getOverrideProps(overrides, "extraField4")}
       ></TextField>
       <Flex
         justifyContent="space-between"

@@ -115,6 +115,14 @@ const App = ({ signOut }) => {
             variation="quiet"
             required
           />
+           <TextField
+            name="extraField4"
+            placeholder="Extra Field4"
+            label="An extra Field4"
+            labelHidden
+            variation="quiet"
+            required
+          />
           <View
             name="image"
             as="input"
@@ -144,6 +152,7 @@ const App = ({ signOut }) => {
             <Text as="span">{note.extraField}</Text>
             <Text as="span">{note.extraField2}</Text>
             <Text as="span">{note.extraField3}</Text>
+            <Text as="span">{note.extraField4}</Text>
             {note.image && (
               <Image
                 src={note.image}
