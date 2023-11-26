@@ -10,6 +10,8 @@ export const getNote = /* GraphQL */ `
       extraField
       image
       extraField2
+      extraField3
+      extraField4
       createdAt
       updatedAt
       __typename
@@ -30,6 +32,8 @@ export const listNotes = /* GraphQL */ `
         extraField
         image
         extraField2
+        extraField3
+        extraField4
         createdAt
         updatedAt
         __typename
