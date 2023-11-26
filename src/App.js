@@ -48,10 +48,9 @@ const App = ({ signOut }) => {
       name: form.get("name"),
       description: form.get("description"),
       extraField: form.get("extraField"),
-      extraField: form.get("extraField1"),
-      extraField: form.get("extraField2"),
-      extraField: form.get("extraField3"),
-      extraField: form.get("extraField4"),
+      extraField2: form.get("extraField2"),
+      extraField3: form.get("extraField3"),
+      extraField4: form.get("extraField4"),
       image: image.name,
     };
     if (!!data.image) await Storage.put(data.name, image);

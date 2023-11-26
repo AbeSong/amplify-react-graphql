@@ -26,8 +26,8 @@ export default function NoteUpdateForm(props) {
   const initialValues = {
     name: "",
     description: "",
-    extraField: "",
     image: "",
+    extraField: "",
     extraField2: "",
     extraField3: "",
     extraField4: "",
@@ -36,8 +36,8 @@ export default function NoteUpdateForm(props) {
   const [description, setDescription] = React.useState(
     initialValues.description
   );
-  const [extraField, setExtraField] = React.useState(initialValues.extraField);
   const [image, setImage] = React.useState(initialValues.image);
+  const [extraField, setExtraField] = React.useState(initialValues.extraField);
   const [extraField2, setExtraField2] = React.useState(
     initialValues.extraField2
   );
@@ -54,8 +54,8 @@ export default function NoteUpdateForm(props) {
       : initialValues;
     setName(cleanValues.name);
     setDescription(cleanValues.description);
-    setExtraField(cleanValues.extraField);
     setImage(cleanValues.image);
+    setExtraField(cleanValues.extraField);
     setExtraField2(cleanValues.extraField2);
     setExtraField3(cleanValues.extraField3);
     setExtraField4(cleanValues.extraField4);
@@ -80,8 +80,8 @@ export default function NoteUpdateForm(props) {
   const validations = {
     name: [{ type: "Required" }],
     description: [],
-    extraField: [],
     image: [],
+    extraField: [],
     extraField2: [],
     extraField3: [],
     extraField4: [],
@@ -114,8 +114,8 @@ export default function NoteUpdateForm(props) {
         let modelFields = {
           name,
           description: description ?? null,
-          extraField: extraField ?? null,
           image: image ?? null,
+          extraField: extraField ?? null,
           extraField2: extraField2 ?? null,
           extraField3: extraField3 ?? null,
           extraField4: extraField4 ?? null,
@@ -181,8 +181,8 @@ export default function NoteUpdateForm(props) {
             const modelFields = {
               name: value,
               description,
-              extraField,
               image,
+              extraField,
               extraField2,
               extraField3,
               extraField4,
@@ -211,8 +211,8 @@ export default function NoteUpdateForm(props) {
             const modelFields = {
               name,
               description: value,
-              extraField,
               image,
+              extraField,
               extraField2,
               extraField3,
               extraField4,
@@ -231,36 +231,6 @@ export default function NoteUpdateForm(props) {
         {...getOverrideProps(overrides, "description")}
       ></TextField>
       <TextField
-        label="Extra field"
-        isRequired={false}
-        isReadOnly={false}
-        value={extraField}
-        onChange={(e) => {
-          let { value } = e.target;
-          if (onChange) {
-            const modelFields = {
-              name,
-              description,
-              extraField: value,
-              image,
-              extraField2,
-              extraField3,
-              extraField4,
-            };
-            const result = onChange(modelFields);
-            value = result?.extraField ?? value;
-          }
-          if (errors.extraField?.hasError) {
-            runValidationTasks("extraField", value);
-          }
-          setExtraField(value);
-        }}
-        onBlur={() => runValidationTasks("extraField", extraField)}
-        errorMessage={errors.extraField?.errorMessage}
-        hasError={errors.extraField?.hasError}
-        {...getOverrideProps(overrides, "extraField")}
-      ></TextField>
-      <TextField
         label="Image"
         isRequired={false}
         isReadOnly={false}
@@ -271,8 +241,8 @@ export default function NoteUpdateForm(props) {
             const modelFields = {
               name,
               description,
-              extraField,
               image: value,
+              extraField,
               extraField2,
               extraField3,
               extraField4,
@@ -291,6 +261,36 @@ export default function NoteUpdateForm(props) {
         {...getOverrideProps(overrides, "image")}
       ></TextField>
       <TextField
+        label="Extra field"
+        isRequired={false}
+        isReadOnly={false}
+        value={extraField}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              description,
+              image,
+              extraField: value,
+              extraField2,
+              extraField3,
+              extraField4,
+            };
+            const result = onChange(modelFields);
+            value = result?.extraField ?? value;
+          }
+          if (errors.extraField?.hasError) {
+            runValidationTasks("extraField", value);
+          }
+          setExtraField(value);
+        }}
+        onBlur={() => runValidationTasks("extraField", extraField)}
+        errorMessage={errors.extraField?.errorMessage}
+        hasError={errors.extraField?.hasError}
+        {...getOverrideProps(overrides, "extraField")}
+      ></TextField>
+      <TextField
         label="Extra field2"
         isRequired={false}
         isReadOnly={false}
@@ -301,8 +301,8 @@ export default function NoteUpdateForm(props) {
             const modelFields = {
               name,
               description,
-              extraField,
               image,
+              extraField,
               extraField2: value,
               extraField3,
               extraField4,
@@ -331,8 +331,8 @@ export default function NoteUpdateForm(props) {
             const modelFields = {
               name,
               description,
-              extraField,
               image,
+              extraField,
               extraField2,
               extraField3: value,
               extraField4,
@@ -361,8 +361,8 @@ export default function NoteUpdateForm(props) {
             const modelFields = {
               name,
               description,
-              extraField,
               image,
+              extraField,
               extraField2,
               extraField3,
               extraField4: value,

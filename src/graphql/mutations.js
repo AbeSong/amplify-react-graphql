@@ -10,8 +10,8 @@ export const createNote = /* GraphQL */ `
       id
       name
       description
-      extraField
       image
+      extraField
       extraField2
       extraField3
       extraField4
@@ -30,8 +30,8 @@ export const updateNote = /* GraphQL */ `
       id
       name
       description
-      extraField
       image
+      extraField
       extraField2
       extraField3
       extraField4
@@ -50,8 +50,8 @@ export const deleteNote = /* GraphQL */ `
       id
       name
       description
-      extraField
       image
+      extraField
       extraField2
       extraField3
       extraField4

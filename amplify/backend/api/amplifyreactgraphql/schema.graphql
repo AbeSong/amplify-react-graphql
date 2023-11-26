@@ -2,11 +2,11 @@ type Note @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
   description: String
-  extraField: String
   image: String
+  extraField: String
   extraField2: String
   extraField3: String
   extraField4: String
-  
+
 }
  

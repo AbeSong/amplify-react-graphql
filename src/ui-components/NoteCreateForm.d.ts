@@ -24,8 +24,8 @@ export declare type ValidationFunction<T> = (value: T, validationResponse: Valid
 export declare type NoteCreateFormInputValues = {
     name?: string;
     description?: string;
-    extraField?: string;
     image?: string;
+    extraField?: string;
     extraField2?: string;
     extraField3?: string;
     extraField4?: string;
@@ -33,8 +33,8 @@ export declare type NoteCreateFormInputValues = {
 export declare type NoteCreateFormValidationValues = {
     name?: ValidationFunction<string>;
     description?: ValidationFunction<string>;
-    extraField?: ValidationFunction<string>;
     image?: ValidationFunction<string>;
+    extraField?: ValidationFunction<string>;
     extraField2?: ValidationFunction<string>;
     extraField3?: ValidationFunction<string>;
     extraField4?: ValidationFunction<string>;
@@ -44,8 +44,8 @@ export declare type NoteCreateFormOverridesProps = {
     NoteCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
     name?: PrimitiveOverrideProps<TextFieldProps>;
     description?: PrimitiveOverrideProps<TextFieldProps>;
-    extraField?: PrimitiveOverrideProps<TextFieldProps>;
     image?: PrimitiveOverrideProps<TextFieldProps>;
+    extraField?: PrimitiveOverrideProps<TextFieldProps>;
     extraField2?: PrimitiveOverrideProps<TextFieldProps>;
     extraField3?: PrimitiveOverrideProps<TextFieldProps>;
     extraField4?: PrimitiveOverrideProps<TextFieldProps>;
