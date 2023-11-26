@@ -48,6 +48,7 @@ const App = ({ signOut }) => {
       name: form.get("name"),
       description: form.get("description"),
       extraField: form.get("extraField"),
+      extraField2: form.get("extraField2"),
       image: image.name,
     };
     if (!!data.image) await Storage.put(data.name, image);
@@ -99,13 +100,21 @@ const App = ({ signOut }) => {
             variation="quiet"
             required
           />
+          <TextField
+            name="extraField2"
+            placeholder="Extra Field2"
+            label="An extra Field2"
+            labelHidden
+            variation="quiet"
+            required
+          />
           <View
             name="image"
             as="input"
             type="file"
             style={{ alignSelf: "end" }}
           />
-
+          
           <Button type="submit" variation="primary">
             Create Note
           </Button>
@@ -119,13 +128,14 @@ const App = ({ signOut }) => {
             key={note.id || note.name}
             direction="row"
             justifyContent="center"
-            alignItems="center"
+            alignItems="left"
           >
             <Text as="strong" fontWeight={700}>
               {note.name}
             </Text>
             <Text as="span">{note.description}</Text>
             <Text as="span">{note.extraField}</Text>
+            <Text as="span">{note.extraField2}</Text>
             {note.image && (
               <Image
                 src={note.image}
