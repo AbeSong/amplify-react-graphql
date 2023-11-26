@@ -7,8 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { fetchByPath, validateField } from "./utils";
+import { fetchByPath, getOverrideProps, validateField } from "./utils";
 import { API } from "aws-amplify";
 import { createNote } from "../graphql/mutations";
 export default function NoteCreateForm(props) {
@@ -25,23 +24,27 @@ export default function NoteCreateForm(props) {
   const initialValues = {
     name: "",
     description: "",
+    extraField: "",
     image: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [description, setDescription] = React.useState(
     initialValues.description
   );
+  const [extraField, setExtraField] = React.useState(initialValues.extraField);
   const [image, setImage] = React.useState(initialValues.image);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setName(initialValues.name);
     setDescription(initialValues.description);
+    setExtraField(initialValues.extraField);
     setImage(initialValues.image);
     setErrors({});
   };
   const validations = {
     name: [{ type: "Required" }],
     description: [],
+    extraField: [],
     image: [],
   };
   const runValidationTasks = async (
@@ -72,6 +75,7 @@ export default function NoteCreateForm(props) {
         let modelFields = {
           name,
           description,
+          extraField,
           image,
         };
         const validationResponses = await Promise.all(
@@ -137,6 +141,7 @@ export default function NoteCreateForm(props) {
             const modelFields = {
               name: value,
               description,
+              extraField,
               image,
             };
             const result = onChange(modelFields);
@@ -163,6 +168,7 @@ export default function NoteCreateForm(props) {
             const modelFields = {
               name,
               description: value,
+              extraField,
               image,
             };
             const result = onChange(modelFields);
@@ -179,6 +185,33 @@ export default function NoteCreateForm(props) {
         {...getOverrideProps(overrides, "description")}
       ></TextField>
       <TextField
+        label="Extra field"
+        isRequired={false}
+        isReadOnly={false}
+        value={extraField}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              description,
+              extraField: value,
+              image,
+            };
+            const result = onChange(modelFields);
+            value = result?.extraField ?? value;
+          }
+          if (errors.extraField?.hasError) {
+            runValidationTasks("extraField", value);
+          }
+          setExtraField(value);
+        }}
+        onBlur={() => runValidationTasks("extraField", extraField)}
+        errorMessage={errors.extraField?.errorMessage}
+        hasError={errors.extraField?.hasError}
+        {...getOverrideProps(overrides, "extraField")}
+      ></TextField>
+      <TextField
         label="Image"
         isRequired={false}
         isReadOnly={false}
@@ -189,6 +222,7 @@ export default function NoteCreateForm(props) {
             const modelFields = {
               name,
               description,
+              extraField,
               image: value,
             };
             const result = onChange(modelFields);
