@@ -1,0 +1,75 @@
+#summaryPage{
+  font-family: 'Neue Haas Grotesk Display Pro', Helvetica, Arial, sans-serif;
+  margin-bottom: 44px;
+}
+
+#summaryPage .ac-body{
+  border: none;
+  height: auto;
+  /* height: 640px; */
+}
+
+#summaryPage h3{
+  color: #3D4550;
+  font-size: 20px;
+  display: block;
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+}
+
+#summaryPage .form-summary{
+  background: #E7EDF0;
+  overflow: auto;
+}
+
+#summaryPage .form-summary .summary-item{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: #3d4550;
+}
+#summaryPage .form-summary .summary-item svg{
+  margin-right: 8px;;
+}
+
+#summaryPage .summary-section{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DBE1E4;
+}
+
+#summaryPage .summary-section h4 {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #3D4550;
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+}
+
+#summaryPage .total-details{
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#summaryPage .cost-details-item{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1.4em;
+  
+}
+
+#summaryPage .flex-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+#summaryPage .small-item{
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #3D4550;
+}

@@ -1,0 +1,956 @@
+{
+  "data": [
+    {
+      "name": "Class 9 Computer hardware, software, electronics and electrical goods.",
+      "id": 9,
+      "number": 9,
+      "suggestions": [
+        {
+          "id": "e553bf3f-f51b-5206-3bf3",
+          "class_number": 9,
+          "name": "car stereos",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "e123bf3f-f51b-51c2-3bf3",
+          "class_number": 9,
+          "name": "car radios",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "a3284c33-061b-5ed2-84c3",
+          "class_number": 9,
+          "name": "car batteries",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "585fdf3f-f51b-5826-fdf3",
+          "class_number": 9,
+          "name": "computers",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "1d4a8f26-061b-5575-a8f2",
+          "class_number": 9,
+          "name": "videos",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "a09d5f3f-f51b-5da9-d5f3",
+          "class_number": 9,
+          "name": "batteries",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "0521cf3f-f51b-52f2-1cf3",
+          "class_number": 9,
+          "name": "cameras",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "3fce5726-061b-579d-e572",
+          "class_number": 9,
+          "name": "digitizers",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "a6d79b26-061b-5f0e-79b2",
+          "class_number": 9,
+          "name": "monitors",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "704a724f-f51b-5ba4-a724",
+          "class_number": 9,
+          "name": "radios",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "13ad4f3f-f51b-54da-d4f3",
+          "class_number": 9,
+          "name": "battery chargers",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "b393a14f-f51b-50e9-3a14",
+          "class_number": 9,
+          "name": "mobile phones",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "0b24a526-061b-5553-4a52",
+          "class_number": 9,
+          "name": "car telephones",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "fa168626-061b-5352-6862",
+          "class_number": 9,
+          "name": "computer software",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "b427214f-f51b-5fe2-7214",
+          "class_number": 9,
+          "name": "headphones",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "4e63a526-061b-5887-3a52",
+          "class_number": 9,
+          "name": "car speakers",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "38df034f-f51b-582e-f034",
+          "class_number": 9,
+          "name": "televisions",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "12a3ee58-461b-55ca-3ee5",
+          "class_number": 9,
+          "name": "video records",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "d441a526-061b-51f4-1a52",
+          "class_number": 9,
+          "name": "car audio apparatus",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "f9f1514f-f51b-5340-2514",
+          "class_number": 9,
+          "name": "in-car telephone handset cradles",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "2408d04f-f51b-56e0-8d04",
+          "class_number": 9,
+          "name": "electric batteries",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "f08f614f-f51b-54b8-f614",
+          "class_number": 9,
+          "name": "loudspeakers",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "e8e2cf3f-f51b-513f-2cf3",
+          "class_number": 9,
+          "name": "car aerials",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "06e2a526-061b-5a1f-2a52",
+          "class_number": 9,
+          "name": "car speaker components",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "term6139-3266-76db-0aed",
+          "class_number": 9,
+          "name": "mobile phone car window mounts",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "term6139-3266-673b-21f3",
+          "class_number": 9,
+          "name": "mobile phone car vent mounts",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "e4a3a526-061b-54fa-3a52",
+          "class_number": 9,
+          "name": "car stereo apparatus",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "66a2a526-061b-5a0b-2a52",
+          "class_number": 9,
+          "name": "car radio receivers",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "3b71a526-061b-5858-1a52",
+          "class_number": 9,
+          "name": "car audio instruments",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "bb62a526-061b-5067-2a52",
+          "class_number": 9,
+          "name": "car compact disc players",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "0c5c0826-061b-5566-c082",
+          "class_number": 9,
+          "name": "electrical batteries for cars",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "f9eb6426-061b-544f-b642",
+          "class_number": 9,
+          "name": "antennas for car radios",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "a432a526-061b-50f3-2a52",
+          "class_number": 9,
+          "name": "car cassette decks",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "b469d14f-f51b-50f6-9d14",
+          "class_number": 9,
+          "name": "navigation computers for cars",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "8d229b1a-461b-5c73-29b1",
+          "class_number": 9,
+          "name": "loudspeakers for use in cars",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "86f1a526-061b-5d00-2a52",
+          "class_number": 9,
+          "name": "car cassette apparatus",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "6c2ab826-061b-5b63-ab82",
+          "class_number": 9,
+          "name": "electronic inverters being car door self-locking devices",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "78298826-061b-5c23-9882",
+          "class_number": 9,
+          "name": "electronic apparatus for the control of car parking",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "21f70d26-061b-56bf-70d2",
+          "class_number": 9,
+          "name": "radio receivers for use in cars",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        },
+        {
+          "id": "1ed32526-061b-578e-3252",
+          "class_number": 9,
+          "name": "audio electrical apparatus for in-car entertainment",
+          "class_name": "Class 9 Computer hardware, software, electronics and electrical goods."
+        }
+      ]
+    },
+    {
+      "name": "Class 39 Travel, transport, tourism, storage",
+      "id": 39,
+      "number": 39,
+      "suggestions": [
+        {
+          "id": "8f2b3681-061b-5a93-b368",
+          "class_number": 39,
+          "name": "car rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "2f0f2681-061b-5591-f268",
+          "class_number": 39,
+          "name": "car transport",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "81cc4781-061b-5abc-c478",
+          "class_number": 39,
+          "name": "rental of cars",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "b753e781-061b-5e16-3e78",
+          "class_number": 39,
+          "name": "transport",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "87031881-061b-5b11-3188",
+          "class_number": 39,
+          "name": "vehicle rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "6cef5781-061b-5a6f-f578",
+          "class_number": 39,
+          "name": "storage",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "79db3781-061b-593e-b378",
+          "class_number": 39,
+          "name": "rental of motor racing cars",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "035a3681-061b-54d5-a368",
+          "class_number": 39,
+          "name": "car hire services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "95b37681-061b-5bfb-3768",
+          "class_number": 39,
+          "name": "motor vehicle rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "168a3681-061b-5c09-a368",
+          "class_number": 39,
+          "name": "car park services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "bde03781-061b-5e7f-0378",
+          "class_number": 39,
+          "name": "rental of vehicles",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "e8f11881-061b-5130-2188",
+          "class_number": 39,
+          "name": "vehicle hire",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "c821f781-061b-5f23-1f78",
+          "class_number": 39,
+          "name": "truck rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "aecac08d-061b-5e8d-ac08",
+          "class_number": 39,
+          "name": "motor car transport services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "8b237681-061b-5b53-3768",
+          "class_number": 39,
+          "name": "motor car rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "8d7c3781-061b-5b78-c378",
+          "class_number": 39,
+          "name": "rental of motor vehicles",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "fc163681-061b-5472-6368",
+          "class_number": 39,
+          "name": "chauffeur driven car hire services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "e8d5d08d-061b-523e-5d08",
+          "class_number": 39,
+          "name": "parking of cars",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "4a68c781-061b-5647-8c78",
+          "class_number": 39,
+          "name": "transport services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "43f2308d-061b-58df-2308",
+          "class_number": 39,
+          "name": "booking of hire cars",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "a7b03781-061b-5c1c-0378",
+          "class_number": 39,
+          "name": "rental of vehicle roof racks",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "dc445681-061b-5075-4568",
+          "class_number": 39,
+          "name": "garage rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "929e0881-061b-5cc9-e088",
+          "class_number": 39,
+          "name": "vehicle towing",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "fade2681-061b-525e-e268",
+          "class_number": 39,
+          "name": "car sharing services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "f514308d-061b-5402-4308",
+          "class_number": 39,
+          "name": "booking of vehicle rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "ff451781-061b-52a5-5178",
+          "class_number": 39,
+          "name": "parking place rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "48861781-061b-5839-6178",
+          "class_number": 39,
+          "name": "passenger transport",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "b2d21881-061b-5ecd-2188",
+          "class_number": 39,
+          "name": "vehicle parking services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "c53b3781-061b-5ef3-b378",
+          "class_number": 39,
+          "name": "rental of motor cars",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "d207c581-061b-5fc0-7c58",
+          "class_number": 39,
+          "name": "boat rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "1b637681-061b-5767-3768",
+          "class_number": 39,
+          "name": "motor coach rental",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "efdbc08d-061b-52ae-bc08",
+          "class_number": 39,
+          "name": "motor vehicle transport services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "5ba75781-061b-575b-7578",
+          "class_number": 39,
+          "name": "storage of goods",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "3e9f8681-061b-568a-f868",
+          "class_number": 39,
+          "name": "provision of car parking facilities",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "1261308d-061b-55c6-1308",
+          "class_number": 39,
+          "name": "booking agency services for car hire",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "83ade08d-061b-5dda-de08",
+          "class_number": 39,
+          "name": "rental of chauffeur driven cars",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "bf65308d-061b-51a7-5308",
+          "class_number": 39,
+          "name": "car parking (valet) services",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "327eb08d-061b-57c7-eb08",
+          "class_number": 39,
+          "name": "hire of transport vehicles",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "bbcc0881-061b-5e5d-c088",
+          "class_number": 39,
+          "name": "travel arrangement",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        },
+        {
+          "id": "3b6db581-061b-5657-db58",
+          "class_number": 39,
+          "name": "air transport",
+          "class_name": "Class 39 Travel, transport, tourism, storage"
+        }
+      ]
+    },
+    {
+      "name": "Class 12 Vehicles (land, air, sea)",
+      "id": 12,
+      "number": 12,
+      "suggestions": [
+        {
+          "id": "f0ee2d5f-f51b-55ce-e2d5",
+          "class_number": 12,
+          "name": "cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "eda57e76-061b-528b-57e7",
+          "class_number": 12,
+          "name": "car seats",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "5d5aad5f-f51b-5876-aad5",
+          "class_number": 12,
+          "name": "motor cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "bf586e5f-f51b-5e96-86e5",
+          "class_number": 12,
+          "name": "vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "9dc4af76-061b-518d-4af7",
+          "class_number": 12,
+          "name": "passenger cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "90256e5f-f51b-5ba2-56e5",
+          "class_number": 12,
+          "name": "vehicle seats",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "b8e09f76-061b-503f-09f7",
+          "class_number": 12,
+          "name": "motor vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "c6776e5f-f51b-5f08-76e5",
+          "class_number": 12,
+          "name": "vehicle wheels",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "07867e76-061b-5519-67e7",
+          "class_number": 12,
+          "name": "car transporters",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "75e0bc5f-f51b-5a0f-0bc5",
+          "class_number": 12,
+          "name": "automobiles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "e6b93353-061b-511c-9335",
+          "class_number": 12,
+          "name": "racing cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "5c1c2d5f-f51b-5862-c2d5",
+          "class_number": 12,
+          "name": "car seat harnesses",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "7826ad5f-f51b-5a23-6ad5",
+          "class_number": 12,
+          "name": "mine cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "613dbc5f-f51b-5ab3-dbc5",
+          "class_number": 12,
+          "name": "automobile wheels",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "3d390e5f-f51b-5a74-90e5",
+          "class_number": 12,
+          "name": "sports cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "bdc47e76-061b-508d-47e7",
+          "class_number": 12,
+          "name": "car seat canopies",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "531cbc5f-f51b-58d1-cbc5",
+          "class_number": 12,
+          "name": "automobile tires",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "78110e5f-f51b-5a32-10e5",
+          "class_number": 12,
+          "name": "sleeping cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "b6f7dd5f-f51b-5e00-8dd5",
+          "class_number": 12,
+          "name": "railway cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "613e9d5f-f51b-58b3-e9d5",
+          "class_number": 12,
+          "name": "land vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "facf6e5f-f51b-515d-f6e5",
+          "class_number": 12,
+          "name": "wheels for vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "6e8ace76-061b-5a89-ace7",
+          "class_number": 12,
+          "name": "coverings for car seats",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "26a66e5f-f51b-550b-66e5",
+          "class_number": 12,
+          "name": "vehicle tyres",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "0fe9c086-061b-559f-9c08",
+          "class_number": 12,
+          "name": "vehicle doors",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "b6752d5f-f51b-5e08-52d5",
+          "class_number": 12,
+          "name": "covers for vehicle steering wheels",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "38947e76-061b-582a-47e7",
+          "class_number": 12,
+          "name": "car safety seats for children",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "430eb086-061b-59d0-eb08",
+          "class_number": 12,
+          "name": "tyres for motor vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "17ab2e5f-f51b-552b-b2e5",
+          "class_number": 12,
+          "name": "tires for vehicle wheels",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "ff71de76-061b-54a8-1de7",
+          "class_number": 12,
+          "name": "cycle cars",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "5158bc5f-f51b-5cb5-8bc5",
+          "class_number": 12,
+          "name": "automobile chassis",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "6a9bbc5f-f51b-594a-bbc5",
+          "class_number": 12,
+          "name": "automobile steering wheels",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "77f05e76-061b-5b10-15e7",
+          "class_number": 12,
+          "name": "automotive vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "ec416e5f-f51b-5075-16e5",
+          "class_number": 12,
+          "name": "vehicle chassis",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "47fd1f76-061b-5910-e1f7",
+          "class_number": 12,
+          "name": "head-rests for car seats",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "839d0e5f-f51b-5bd9-d0e5",
+          "class_number": 12,
+          "name": "seat covers for vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "67116e5f-f51b-5912-16e5",
+          "class_number": 12,
+          "name": "vehicle bumpers",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "35b63d5f-f51b-55fb-63d5",
+          "class_number": 12,
+          "name": "driving motors for land vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "a0176e5f-f51b-5da1-76e5",
+          "class_number": 12,
+          "name": "vehicle wheel rims",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "770abd5f-f51b-5a11-abd5",
+          "class_number": 12,
+          "name": "off-road vehicles",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        },
+        {
+          "id": "34e57e76-061b-58ee-57e7",
+          "class_number": 12,
+          "name": "car sun blinds",
+          "class_name": "Class 12 Vehicles (land, air, sea)"
+        }
+      ]
+    },
+    {
+      "name": "Class 37 Building construction, repair, installation services",
+      "id": 37,
+      "number": 37,
+      "suggestions": [
+        {
+          "id": "25403b0d-061b-56f4-03b0",
+          "class_number": 37,
+          "name": "car wash",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "88a11631-061b-5b2b-1163",
+          "class_number": 37,
+          "name": "car maintenance",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "b9df2b0d-061b-5f3e-f2b0",
+          "class_number": 37,
+          "name": "car detailing",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "35711631-061b-57f7-1163",
+          "class_number": 37,
+          "name": "car cleaning services",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "7e88eb0d-061b-5f89-8eb0",
+          "class_number": 37,
+          "name": "motor vehicle wash",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "1e619c0d-061b-5587-19c0",
+          "class_number": 37,
+          "name": "servicing of cars",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "6d07ac0d-061b-5b71-7ac0",
+          "class_number": 37,
+          "name": "vehicle servicing",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "2696ac0d-061b-570a-6ac0",
+          "class_number": 37,
+          "name": "vehicle repair",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "71c71931-061b-5bbc-7193",
+          "class_number": 37,
+          "name": "vehicle washing",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "6a341931-061b-5b44-4193",
+          "class_number": 37,
+          "name": "vehicle cleaning",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "87751931-061b-5b18-5193",
+          "class_number": 37,
+          "name": "vehicle maintenance",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "88628c0d-061b-5c27-28c0",
+          "class_number": 37,
+          "name": "repair of motor vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "1ad4e631-061b-534e-4e63",
+          "class_number": 37,
+          "name": "motor vehicle maintenance and repair",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "d247ac0d-061b-51d4-7ac0",
+          "class_number": 37,
+          "name": "vehicle tuning",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "d891bb0d-061b-513a-1bb0",
+          "class_number": 37,
+          "name": "garage services for vehicle repair",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "4b2b3b0d-061b-5853-b3b0",
+          "class_number": 37,
+          "name": "cleaning of motor vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "9cd04831-061b-5c6e-0483",
+          "class_number": 37,
+          "name": "repair of vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "44a41931-061b-58ea-4193",
+          "class_number": 37,
+          "name": "vehicle detailing",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "5561bb0d-061b-59f6-1bb0",
+          "class_number": 37,
+          "name": "garage services for vehicle maintenance",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "c60c7c0d-061b-5111-c7c0",
+          "class_number": 37,
+          "name": "repair of accident damage to vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "362c0731-061b-5603-c073",
+          "class_number": 37,
+          "name": "maintenance and repair of motor vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "e6729c0d-061b-5218-29c0",
+          "class_number": 37,
+          "name": "servicing of vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "f8161931-061b-5232-6193",
+          "class_number": 37,
+          "name": "vehicle polishing",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "114d0c0d-061b-56b4-d0c0",
+          "class_number": 37,
+          "name": "reconditioning of vehicle engines",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "d974eb0d-061b-5148-4eb0",
+          "class_number": 37,
+          "name": "maintenance or repair of automotive vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "70a31931-061b-5caa-3193",
+          "class_number": 37,
+          "name": "vehicle battery charging",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "3aad0631-061b-564b-d063",
+          "class_number": 37,
+          "name": "cleaning of vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "cafdbb0d-061b-5150-ebb0",
+          "class_number": 37,
+          "name": "installation of automobile accessories",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "b7041931-061b-5f11-4193",
+          "class_number": 37,
+          "name": "vehicle breakdown repair services",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "b8125831-061b-5e22-2583",
+          "class_number": 37,
+          "name": "repair of land vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "281d1631-061b-5522-d163",
+          "class_number": 37,
+          "name": "emergency vehicle repair services",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "fb73f631-061b-5168-3f63",
+          "class_number": 37,
+          "name": "maintenance and repair of vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "f7a6cb0d-061b-532b-6cb0",
+          "class_number": 37,
+          "name": "installation of parts for vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        },
+        {
+          "id": "b4e59731-061b-5eee-5973",
+          "class_number": 37,
+          "name": "painting of vehicles",
+          "class_name": "Class 37 Building construction, repair, installation services"
+        }
+      ]
+    }
+  ]
+}

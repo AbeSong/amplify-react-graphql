@@ -1,12 +1,16 @@
 type Note @model @auth(rules: [{allow: public}]) {
   id: ID!
-  name: String!
-  description: String
-  image: String
-  extraField: String
-  extraField2: String
-  extraField3: String
-  extraField4: String
-
+  trademarkType: String
+  trademarkText: String
+  trademarkLogo: String
+  ownerType: String
+  ownerName: String
+  abnAcn: String
+  email: String
+  phone: String
+  address1: String
+  suburb: String
+  postcode: String
+  state: String
+  country: String
 }
- 

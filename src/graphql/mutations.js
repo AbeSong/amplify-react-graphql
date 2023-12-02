@@ -8,13 +8,19 @@ export const createNote = /* GraphQL */ `
   ) {
     createNote(input: $input, condition: $condition) {
       id
-      name
-      description
-      image
-      extraField
-      extraField2
-      extraField3
-      extraField4
+      trademarkType
+      trademarkText
+      trademarkLogo
+      ownerType
+      ownerName
+      abnAcn
+      email
+      phone
+      address1
+      suburb
+      postcode
+      state
+      country
       createdAt
       updatedAt
       __typename
@@ -28,13 +34,19 @@ export const updateNote = /* GraphQL */ `
   ) {
     updateNote(input: $input, condition: $condition) {
       id
-      name
-      description
-      image
-      extraField
-      extraField2
-      extraField3
-      extraField4
+      trademarkType
+      trademarkText
+      trademarkLogo
+      ownerType
+      ownerName
+      abnAcn
+      email
+      phone
+      address1
+      suburb
+      postcode
+      state
+      country
       createdAt
       updatedAt
       __typename
@@ -48,13 +60,19 @@ export const deleteNote = /* GraphQL */ `
   ) {
     deleteNote(input: $input, condition: $condition) {
       id
-      name
-      description
-      image
-      extraField
-      extraField2
-      extraField3
-      extraField4
+      trademarkType
+      trademarkText
+      trademarkLogo
+      ownerType
+      ownerName
+      abnAcn
+      email
+      phone
+      address1
+      suburb
+      postcode
+      state
+      country
       createdAt
       updatedAt
       __typename

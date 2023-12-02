@@ -1,0 +1,88 @@
+
+.search-container {
+  overflow: auto;
+  outline: 1px solid #eee;
+}
+
+.search-results-list {
+  list-style-type: none;
+  padding-left: 8px;
+  height: 460px;
+  overflow: auto;
+}
+
+.search-results-list li{
+ margin-bottom: 8px;
+}
+
+.search-added .selected-class-container {
+  list-style-type: none;
+  max-height: 450px;
+  overflow: auto;
+  margin: 0;
+  padding: 0 16px;
+}
+
+.search-added .selected-class-container .selected-class ul {
+  padding-left: 0;
+}
+
+.search-added .selected-class span.class-title {
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+  position: relative;
+}
+
+.search-added .selected-class .remove-button {
+  margin-right: 4px;
+}
+
+.trademark-class-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 96px;
+}
+.trademark-class-item-list.expanded {
+  max-height: none;
+}
+.ac-header {
+  display: flex;
+  background: #e7edf0;
+  padding: 12px;
+  box-sizing: border-box;
+  height: 72px;
+  justify-content: center;
+}
+
+
+.trademark-class-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+  color: #3d4550;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px dashed #dbe1e4;
+  /* cursor: pointer; */
+}
+
+#goodsAndServices h2 {
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+  color: #3D4550;
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+#goodsAndServices .description {
+  padding-left: 16px;
+}
+#goodsAndServices .description li {
+font-size: 12px;
+margin-bottom: 2px;
+color: #3D4550;
+}

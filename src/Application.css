@@ -1,0 +1,99 @@
+/* FORM */
+.preview {
+  background: #eee;
+}
+
+/*  */
+.form-fixed_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #C3CAD2;
+  padding: 15px 0;
+}
+
+
+.form-fixed_bar .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.form-fixed_bar .total {
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3D4550;
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+.form-fixed_bar .buttons {
+  display: flex;
+  align-items: center;
+}
+
+.form-fixed_bar .button.prev-form {
+  background: white;
+  color: #7C848F;
+}
+
+.form-fixed_bar .button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-fixed_bar #submit-btn,
+.form-fixed_bar .button {
+  width: 180px;
+}
+
+.form-fixed_bar button.prev-form,
+.form-fixed_bar button.next-form {
+  width: 180px;
+}
+
+.form-fixed_bar button.next-form {
+  background: #1964F9;
+  color: white;
+  margin-left: 15px;
+}
+
+.form-fixed_bar .total {
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.form-fixed_bar #submit-btn,
+.form-fixed_bar .button {
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+  padding: 15px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.form-fixed_bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#applicationOwnership h2 {
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+  color: #3D4550;
+  font-size: 20px;
+  margin: 0 0 4px;
+  margin-bottom: 16px;
+}

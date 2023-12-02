@@ -5,13 +5,19 @@ export const onCreateNote = /* GraphQL */ `
   subscription OnCreateNote($filter: ModelSubscriptionNoteFilterInput) {
     onCreateNote(filter: $filter) {
       id
-      name
-      description
-      image
-      extraField
-      extraField2
-      extraField3
-      extraField4
+      trademarkType
+      trademarkText
+      trademarkLogo
+      ownerType
+      ownerName
+      abnAcn
+      email
+      phone
+      address1
+      suburb
+      postcode
+      state
+      country
       createdAt
       updatedAt
       __typename
@@ -22,13 +28,19 @@ export const onUpdateNote = /* GraphQL */ `
   subscription OnUpdateNote($filter: ModelSubscriptionNoteFilterInput) {
     onUpdateNote(filter: $filter) {
       id
-      name
-      description
-      image
-      extraField
-      extraField2
-      extraField3
-      extraField4
+      trademarkType
+      trademarkText
+      trademarkLogo
+      ownerType
+      ownerName
+      abnAcn
+      email
+      phone
+      address1
+      suburb
+      postcode
+      state
+      country
       createdAt
       updatedAt
       __typename
@@ -39,13 +51,19 @@ export const onDeleteNote = /* GraphQL */ `
   subscription OnDeleteNote($filter: ModelSubscriptionNoteFilterInput) {
     onDeleteNote(filter: $filter) {
       id
-      name
-      description
-      image
-      extraField
-      extraField2
-      extraField3
-      extraField4
+      trademarkType
+      trademarkText
+      trademarkLogo
+      ownerType
+      ownerName
+      abnAcn
+      email
+      phone
+      address1
+      suburb
+      postcode
+      state
+      country
       createdAt
       updatedAt
       __typename

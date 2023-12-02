@@ -24,41 +24,57 @@ export default function NoteUpdateForm(props) {
     ...rest
   } = props;
   const initialValues = {
-    name: "",
-    description: "",
-    image: "",
-    extraField: "",
-    extraField2: "",
-    extraField3: "",
-    extraField4: "",
+    trademarkType: "",
+    trademarkText: "",
+    trademarkLogo: "",
+    ownerType: "",
+    ownerName: "",
+    abnAcn: "",
+    email: "",
+    phone: "",
+    address1: "",
+    suburb: "",
+    postcode: "",
+    state: "",
+    country: "",
   };
-  const [name, setName] = React.useState(initialValues.name);
-  const [description, setDescription] = React.useState(
-    initialValues.description
+  const [trademarkType, setTrademarkType] = React.useState(
+    initialValues.trademarkType
   );
-  const [image, setImage] = React.useState(initialValues.image);
-  const [extraField, setExtraField] = React.useState(initialValues.extraField);
-  const [extraField2, setExtraField2] = React.useState(
-    initialValues.extraField2
+  const [trademarkText, setTrademarkText] = React.useState(
+    initialValues.trademarkText
   );
-  const [extraField3, setExtraField3] = React.useState(
-    initialValues.extraField3
+  const [trademarkLogo, setTrademarkLogo] = React.useState(
+    initialValues.trademarkLogo
   );
-  const [extraField4, setExtraField4] = React.useState(
-    initialValues.extraField4
-  );
+  const [ownerType, setOwnerType] = React.useState(initialValues.ownerType);
+  const [ownerName, setOwnerName] = React.useState(initialValues.ownerName);
+  const [abnAcn, setAbnAcn] = React.useState(initialValues.abnAcn);
+  const [email, setEmail] = React.useState(initialValues.email);
+  const [phone, setPhone] = React.useState(initialValues.phone);
+  const [address1, setAddress1] = React.useState(initialValues.address1);
+  const [suburb, setSuburb] = React.useState(initialValues.suburb);
+  const [postcode, setPostcode] = React.useState(initialValues.postcode);
+  const [state, setState] = React.useState(initialValues.state);
+  const [country, setCountry] = React.useState(initialValues.country);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     const cleanValues = noteRecord
       ? { ...initialValues, ...noteRecord }
       : initialValues;
-    setName(cleanValues.name);
-    setDescription(cleanValues.description);
-    setImage(cleanValues.image);
-    setExtraField(cleanValues.extraField);
-    setExtraField2(cleanValues.extraField2);
-    setExtraField3(cleanValues.extraField3);
-    setExtraField4(cleanValues.extraField4);
+    setTrademarkType(cleanValues.trademarkType);
+    setTrademarkText(cleanValues.trademarkText);
+    setTrademarkLogo(cleanValues.trademarkLogo);
+    setOwnerType(cleanValues.ownerType);
+    setOwnerName(cleanValues.ownerName);
+    setAbnAcn(cleanValues.abnAcn);
+    setEmail(cleanValues.email);
+    setPhone(cleanValues.phone);
+    setAddress1(cleanValues.address1);
+    setSuburb(cleanValues.suburb);
+    setPostcode(cleanValues.postcode);
+    setState(cleanValues.state);
+    setCountry(cleanValues.country);
     setErrors({});
   };
   const [noteRecord, setNoteRecord] = React.useState(noteModelProp);
@@ -78,13 +94,19 @@ export default function NoteUpdateForm(props) {
   }, [idProp, noteModelProp]);
   React.useEffect(resetStateValues, [noteRecord]);
   const validations = {
-    name: [{ type: "Required" }],
-    description: [],
-    image: [],
-    extraField: [],
-    extraField2: [],
-    extraField3: [],
-    extraField4: [],
+    trademarkType: [],
+    trademarkText: [],
+    trademarkLogo: [],
+    ownerType: [],
+    ownerName: [],
+    abnAcn: [],
+    email: [],
+    phone: [],
+    address1: [],
+    suburb: [],
+    postcode: [],
+    state: [],
+    country: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -112,13 +134,19 @@ export default function NoteUpdateForm(props) {
       onSubmit={async (event) => {
         event.preventDefault();
         let modelFields = {
-          name,
-          description: description ?? null,
-          image: image ?? null,
-          extraField: extraField ?? null,
-          extraField2: extraField2 ?? null,
-          extraField3: extraField3 ?? null,
-          extraField4: extraField4 ?? null,
+          trademarkType: trademarkType ?? null,
+          trademarkText: trademarkText ?? null,
+          trademarkLogo: trademarkLogo ?? null,
+          ownerType: ownerType ?? null,
+          ownerName: ownerName ?? null,
+          abnAcn: abnAcn ?? null,
+          email: email ?? null,
+          phone: phone ?? null,
+          address1: address1 ?? null,
+          suburb: suburb ?? null,
+          postcode: postcode ?? null,
+          state: state ?? null,
+          country: country ?? null,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -171,214 +199,472 @@ export default function NoteUpdateForm(props) {
       {...rest}
     >
       <TextField
-        label="Name"
-        isRequired={true}
-        isReadOnly={false}
-        value={name}
-        onChange={(e) => {
-          let { value } = e.target;
-          if (onChange) {
-            const modelFields = {
-              name: value,
-              description,
-              image,
-              extraField,
-              extraField2,
-              extraField3,
-              extraField4,
-            };
-            const result = onChange(modelFields);
-            value = result?.name ?? value;
-          }
-          if (errors.name?.hasError) {
-            runValidationTasks("name", value);
-          }
-          setName(value);
-        }}
-        onBlur={() => runValidationTasks("name", name)}
-        errorMessage={errors.name?.errorMessage}
-        hasError={errors.name?.hasError}
-        {...getOverrideProps(overrides, "name")}
-      ></TextField>
-      <TextField
-        label="Description"
+        label="Trademark type"
         isRequired={false}
         isReadOnly={false}
-        value={description}
+        value={trademarkType}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              name,
-              description: value,
-              image,
-              extraField,
-              extraField2,
-              extraField3,
-              extraField4,
+              trademarkType: value,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
             };
             const result = onChange(modelFields);
-            value = result?.description ?? value;
+            value = result?.trademarkType ?? value;
           }
-          if (errors.description?.hasError) {
-            runValidationTasks("description", value);
+          if (errors.trademarkType?.hasError) {
+            runValidationTasks("trademarkType", value);
           }
-          setDescription(value);
+          setTrademarkType(value);
         }}
-        onBlur={() => runValidationTasks("description", description)}
-        errorMessage={errors.description?.errorMessage}
-        hasError={errors.description?.hasError}
-        {...getOverrideProps(overrides, "description")}
+        onBlur={() => runValidationTasks("trademarkType", trademarkType)}
+        errorMessage={errors.trademarkType?.errorMessage}
+        hasError={errors.trademarkType?.hasError}
+        {...getOverrideProps(overrides, "trademarkType")}
       ></TextField>
       <TextField
-        label="Image"
+        label="Trademark text"
         isRequired={false}
         isReadOnly={false}
-        value={image}
+        value={trademarkText}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              name,
-              description,
-              image: value,
-              extraField,
-              extraField2,
-              extraField3,
-              extraField4,
+              trademarkType,
+              trademarkText: value,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
             };
             const result = onChange(modelFields);
-            value = result?.image ?? value;
+            value = result?.trademarkText ?? value;
           }
-          if (errors.image?.hasError) {
-            runValidationTasks("image", value);
+          if (errors.trademarkText?.hasError) {
+            runValidationTasks("trademarkText", value);
           }
-          setImage(value);
+          setTrademarkText(value);
         }}
-        onBlur={() => runValidationTasks("image", image)}
-        errorMessage={errors.image?.errorMessage}
-        hasError={errors.image?.hasError}
-        {...getOverrideProps(overrides, "image")}
+        onBlur={() => runValidationTasks("trademarkText", trademarkText)}
+        errorMessage={errors.trademarkText?.errorMessage}
+        hasError={errors.trademarkText?.hasError}
+        {...getOverrideProps(overrides, "trademarkText")}
       ></TextField>
       <TextField
-        label="Extra field"
+        label="Trademark logo"
         isRequired={false}
         isReadOnly={false}
-        value={extraField}
+        value={trademarkLogo}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              name,
-              description,
-              image,
-              extraField: value,
-              extraField2,
-              extraField3,
-              extraField4,
+              trademarkType,
+              trademarkText,
+              trademarkLogo: value,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
             };
             const result = onChange(modelFields);
-            value = result?.extraField ?? value;
+            value = result?.trademarkLogo ?? value;
           }
-          if (errors.extraField?.hasError) {
-            runValidationTasks("extraField", value);
+          if (errors.trademarkLogo?.hasError) {
+            runValidationTasks("trademarkLogo", value);
           }
-          setExtraField(value);
+          setTrademarkLogo(value);
         }}
-        onBlur={() => runValidationTasks("extraField", extraField)}
-        errorMessage={errors.extraField?.errorMessage}
-        hasError={errors.extraField?.hasError}
-        {...getOverrideProps(overrides, "extraField")}
+        onBlur={() => runValidationTasks("trademarkLogo", trademarkLogo)}
+        errorMessage={errors.trademarkLogo?.errorMessage}
+        hasError={errors.trademarkLogo?.hasError}
+        {...getOverrideProps(overrides, "trademarkLogo")}
       ></TextField>
       <TextField
-        label="Extra field2"
+        label="Owner type"
         isRequired={false}
         isReadOnly={false}
-        value={extraField2}
+        value={ownerType}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              name,
-              description,
-              image,
-              extraField,
-              extraField2: value,
-              extraField3,
-              extraField4,
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType: value,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
             };
             const result = onChange(modelFields);
-            value = result?.extraField2 ?? value;
+            value = result?.ownerType ?? value;
           }
-          if (errors.extraField2?.hasError) {
-            runValidationTasks("extraField2", value);
+          if (errors.ownerType?.hasError) {
+            runValidationTasks("ownerType", value);
           }
-          setExtraField2(value);
+          setOwnerType(value);
         }}
-        onBlur={() => runValidationTasks("extraField2", extraField2)}
-        errorMessage={errors.extraField2?.errorMessage}
-        hasError={errors.extraField2?.hasError}
-        {...getOverrideProps(overrides, "extraField2")}
+        onBlur={() => runValidationTasks("ownerType", ownerType)}
+        errorMessage={errors.ownerType?.errorMessage}
+        hasError={errors.ownerType?.hasError}
+        {...getOverrideProps(overrides, "ownerType")}
       ></TextField>
       <TextField
-        label="Extra field3"
+        label="Owner name"
         isRequired={false}
         isReadOnly={false}
-        value={extraField3}
+        value={ownerName}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              name,
-              description,
-              image,
-              extraField,
-              extraField2,
-              extraField3: value,
-              extraField4,
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName: value,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
             };
             const result = onChange(modelFields);
-            value = result?.extraField3 ?? value;
+            value = result?.ownerName ?? value;
           }
-          if (errors.extraField3?.hasError) {
-            runValidationTasks("extraField3", value);
+          if (errors.ownerName?.hasError) {
+            runValidationTasks("ownerName", value);
           }
-          setExtraField3(value);
+          setOwnerName(value);
         }}
-        onBlur={() => runValidationTasks("extraField3", extraField3)}
-        errorMessage={errors.extraField3?.errorMessage}
-        hasError={errors.extraField3?.hasError}
-        {...getOverrideProps(overrides, "extraField3")}
+        onBlur={() => runValidationTasks("ownerName", ownerName)}
+        errorMessage={errors.ownerName?.errorMessage}
+        hasError={errors.ownerName?.hasError}
+        {...getOverrideProps(overrides, "ownerName")}
       ></TextField>
       <TextField
-        label="Extra field4"
+        label="Abn acn"
         isRequired={false}
         isReadOnly={false}
-        value={extraField4}
+        value={abnAcn}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              name,
-              description,
-              image,
-              extraField,
-              extraField2,
-              extraField3,
-              extraField4: value,
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn: value,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
             };
             const result = onChange(modelFields);
-            value = result?.extraField4 ?? value;
+            value = result?.abnAcn ?? value;
           }
-          if (errors.extraField4?.hasError) {
-            runValidationTasks("extraField4", value);
+          if (errors.abnAcn?.hasError) {
+            runValidationTasks("abnAcn", value);
           }
-          setExtraField4(value);
+          setAbnAcn(value);
         }}
-        onBlur={() => runValidationTasks("extraField4", extraField4)}
-        errorMessage={errors.extraField4?.errorMessage}
-        hasError={errors.extraField4?.hasError}
-        {...getOverrideProps(overrides, "extraField4")}
+        onBlur={() => runValidationTasks("abnAcn", abnAcn)}
+        errorMessage={errors.abnAcn?.errorMessage}
+        hasError={errors.abnAcn?.hasError}
+        {...getOverrideProps(overrides, "abnAcn")}
+      ></TextField>
+      <TextField
+        label="Email"
+        isRequired={false}
+        isReadOnly={false}
+        value={email}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email: value,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
+            };
+            const result = onChange(modelFields);
+            value = result?.email ?? value;
+          }
+          if (errors.email?.hasError) {
+            runValidationTasks("email", value);
+          }
+          setEmail(value);
+        }}
+        onBlur={() => runValidationTasks("email", email)}
+        errorMessage={errors.email?.errorMessage}
+        hasError={errors.email?.hasError}
+        {...getOverrideProps(overrides, "email")}
+      ></TextField>
+      <TextField
+        label="Phone"
+        isRequired={false}
+        isReadOnly={false}
+        value={phone}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone: value,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country,
+            };
+            const result = onChange(modelFields);
+            value = result?.phone ?? value;
+          }
+          if (errors.phone?.hasError) {
+            runValidationTasks("phone", value);
+          }
+          setPhone(value);
+        }}
+        onBlur={() => runValidationTasks("phone", phone)}
+        errorMessage={errors.phone?.errorMessage}
+        hasError={errors.phone?.hasError}
+        {...getOverrideProps(overrides, "phone")}
+      ></TextField>
+      <TextField
+        label="Address1"
+        isRequired={false}
+        isReadOnly={false}
+        value={address1}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1: value,
+              suburb,
+              postcode,
+              state,
+              country,
+            };
+            const result = onChange(modelFields);
+            value = result?.address1 ?? value;
+          }
+          if (errors.address1?.hasError) {
+            runValidationTasks("address1", value);
+          }
+          setAddress1(value);
+        }}
+        onBlur={() => runValidationTasks("address1", address1)}
+        errorMessage={errors.address1?.errorMessage}
+        hasError={errors.address1?.hasError}
+        {...getOverrideProps(overrides, "address1")}
+      ></TextField>
+      <TextField
+        label="Suburb"
+        isRequired={false}
+        isReadOnly={false}
+        value={suburb}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb: value,
+              postcode,
+              state,
+              country,
+            };
+            const result = onChange(modelFields);
+            value = result?.suburb ?? value;
+          }
+          if (errors.suburb?.hasError) {
+            runValidationTasks("suburb", value);
+          }
+          setSuburb(value);
+        }}
+        onBlur={() => runValidationTasks("suburb", suburb)}
+        errorMessage={errors.suburb?.errorMessage}
+        hasError={errors.suburb?.hasError}
+        {...getOverrideProps(overrides, "suburb")}
+      ></TextField>
+      <TextField
+        label="Postcode"
+        isRequired={false}
+        isReadOnly={false}
+        value={postcode}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode: value,
+              state,
+              country,
+            };
+            const result = onChange(modelFields);
+            value = result?.postcode ?? value;
+          }
+          if (errors.postcode?.hasError) {
+            runValidationTasks("postcode", value);
+          }
+          setPostcode(value);
+        }}
+        onBlur={() => runValidationTasks("postcode", postcode)}
+        errorMessage={errors.postcode?.errorMessage}
+        hasError={errors.postcode?.hasError}
+        {...getOverrideProps(overrides, "postcode")}
+      ></TextField>
+      <TextField
+        label="State"
+        isRequired={false}
+        isReadOnly={false}
+        value={state}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state: value,
+              country,
+            };
+            const result = onChange(modelFields);
+            value = result?.state ?? value;
+          }
+          if (errors.state?.hasError) {
+            runValidationTasks("state", value);
+          }
+          setState(value);
+        }}
+        onBlur={() => runValidationTasks("state", state)}
+        errorMessage={errors.state?.errorMessage}
+        hasError={errors.state?.hasError}
+        {...getOverrideProps(overrides, "state")}
+      ></TextField>
+      <TextField
+        label="Country"
+        isRequired={false}
+        isReadOnly={false}
+        value={country}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              trademarkType,
+              trademarkText,
+              trademarkLogo,
+              ownerType,
+              ownerName,
+              abnAcn,
+              email,
+              phone,
+              address1,
+              suburb,
+              postcode,
+              state,
+              country: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.country ?? value;
+          }
+          if (errors.country?.hasError) {
+            runValidationTasks("country", value);
+          }
+          setCountry(value);
+        }}
+        onBlur={() => runValidationTasks("country", country)}
+        errorMessage={errors.country?.errorMessage}
+        hasError={errors.country?.hasError}
+        {...getOverrideProps(overrides, "country")}
       ></TextField>
       <Flex
         justifyContent="space-between"

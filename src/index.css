@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.site-nav ul li.menu-item a.active {
+  color: #1964f9;
+}
+
+.your-trademark{
+  padding: 16px;
+  font-weight: bold;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #eee;
+}
+
+.flex-center-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .faqs-accordion_content{
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.faqs-accordion_content.active{
+  height: auto;
+  display: block;
+} */
+
